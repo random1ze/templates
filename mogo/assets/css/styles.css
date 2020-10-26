@@ -223,7 +223,7 @@ hr {
 	text-decoration: none;
 	padding: 15px 30px;
 	border: 3px solid #fff;
-	transition: background .2s linear, color .2 linear;
+	transition: background .2s linear, color .2s linear;
 }
 .btn:hover {
 	background-color: #fff;
@@ -372,7 +372,7 @@ transition: transform .2s linear;
 	left: 0;
 	z-index: 2;
 	transform: translate3d(0, -50%, 0);
-	transition: opacity .2 linear;
+	transition: opacity .2s linear;
 }
 .card__info {
 	margin-top: 30px;
@@ -1004,7 +1004,7 @@ transition: transform .2s linear;
 	font-weight: 700;
 	text-transform: uppercase;
 	line-height: 1.1;
-	transition: background .2 linear;
+	transition: background .2s linear;
 }
 .subscribe__btn:hover {
 	background-color: #74c7b8;
