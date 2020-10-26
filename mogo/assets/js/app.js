@@ -1,5 +1,4 @@
 $(function () {
-
 	var
 		header = $("#header"),
 		introH = $("#intro").innerHeight(),
@@ -13,7 +12,6 @@ $(function () {
 	});
 
 	function checkscroll(scrollOffset) {
-
 		if (scrollOffset >= introH) {
 			header.addClass("fixed");
 		} else {
@@ -21,18 +19,15 @@ $(function () {
 		}
 	}
 
-
 	// Smooth scroll
 	$("[data-scroll]").on("click", function (event) {
 		event.preventDefault();
-
 		var
 			$this = $(this),
 			blockId = $this.data("scroll"),
 			blockOffset = $(blockId).offset().top;
 		$("#nav a").removeClass("active");
 		$this.addClass("active");
-
 		$("html, body").animate({
 			scrollTop: blockOffset
 		}, 2000);
@@ -48,22 +43,17 @@ $(function () {
 	// collapse wedo
 	$("[data-collapse]").on("click", function (event) {
 		event.preventDefault();
-
 		var
 			$this = $(this),
 			blockId = $this.data("collapse");
-
 		$(this).toggleClass("active");
 	});
 
 	// slider
-
 	$("[data-slider]").slick({
 		infinite: true,
 		fade: false,
 		slidesToShow: 1,
 		slidesToScroll: 1
 	})
-
-
 })
